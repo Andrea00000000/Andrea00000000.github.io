@@ -1,0 +1,186 @@
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    margin: 0;
+}
+nav{
+    background-color: rgb(243, 243, 243);
+    z-index: 2;
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid rgba(198, 198, 198, 0.464)
+}
+nav a{
+    font-size: 60px;
+    margin-left: 20px;
+}
+.b{
+    color: rgb(14, 155, 155);
+}
+.g{
+    color: rgb(250, 192, 0);
+}
+.r{
+    color: red;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: normal;
+}
+hr{
+    width: 70%;
+}
+.immagini{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.immagini img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 50px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.142);
+}
+.dest p{
+    text-align: center;
+    font-weight: bold;
+}
+.destinazione{
+    transition: all 0.2s;
+}
+.destinazione:hover{
+    transition: all 0.2s;
+    transform: translateY(-20px);
+}
+a{
+    text-decoration: none;
+    color: black
+}
+.info table{
+    margin: auto;
+}
+.info table td{
+    width: 600px;
+    height: 400px;
+    text-align: justify;
+    padding: 22px;
+    font-size: 20px;
+    border-left: 90px solid white;
+    border-right: 90px solid white;
+}
+
+footer{
+    color: rgba(255, 255, 255, 0.584);
+    background-color: rgb(7, 20, 41);
+    height: 200px;
+    text-align: center;
+}
+
+.lista{
+    display: block;
+}
+
+.hotel{
+    display: flex;
+    margin: auto;
+    margin-bottom: 50px;
+    height: 200px;
+    width: 70%;
+    box-shadow: 0px 0px 57px -2px rgba(0,0,0,0.24);
+    border-radius: 10px;
+}
+
+.hotel img{
+    transition: all 0.3s;
+    height: 200px;
+    border-radius: 20px 0px 0px 20px;
+    margin-right: 30px;
+}
+.hotel img:hover{
+    transition: all 0.3s;
+    height: 220px;
+    border-radius: 2px;
+    margin-right: 30px;
+    cursor:pointer;
+}
+.hotel a button{
+    padding: 10px;
+    margin: 4.5px;
+    margin-top: 200%;
+}
+.hotel a button:hover{
+    cursor:pointer;
+}
+.description{
+    width: 100%;
+}
+
+.bloccone{
+    display: flex;
+}
+.bloccone p{
+    margin-left: 10%;
+    display: block;
+    padding: 40px;
+}
+.main-photo{
+    height: 400px;
+    left: 50%;
+    transform: translateX(20%);
+    border-radius: 6px;
+}
+.fotine img{
+    display: inline-block;
+    transition: all 0.2s;
+    height: 100px;
+    left: 50%;
+    margin: 10px;
+    margin-top: 20px;
+    transform: translateX(105%);
+    opacity: 75%;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.fotine img:hover{
+    display: inline-block;
+    height: 100px;
+    left: 50%;
+    margin: 10px;
+    margin-top: -30px;
+    transform: translateX(105%);
+    opacity: 100%;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.input-container{
+    height: 650px;
+    width: 500px;
+    border: 2px solid rgb(199, 199, 199);
+    border-radius: 20px;
+    background-color: rgb(230, 230, 230);
+    margin: auto;
+}
+.input-container input,select{
+    margin-left: 18%;
+    border-radius: 4px;
+    width: 60%;
+    margin-bottom: 20px;
+    height: 25px;
+    border: solid 2px lightgray;
+}
+.submit{
+    background-color: gainsboro; 
+}
+.submit:hover{
+    background-color: rgb(205, 205, 205); 
+    cursor: pointer;
+}
+.submit:active{
+    background-color: rgb(192, 192, 192); 
+}

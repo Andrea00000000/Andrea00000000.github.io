@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vatrigo</title>
+    <link rel="stylesheet" href="css/stile.css">
+    <link rel="icon" href="img/V.png">
+    <script>
+        function cambiaImg(img){
+            var foto = document.getElementById("foto");
+            foto.src = img.src;
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="home.html"><span class="b">va</span><span class="g">tri</span><span class="r">go</span></a>
+    </nav>
+    <br><br><br><br><br>
+    <main>
+        <section>
+            <div class="bloccone">
+                <img src="img/Camera.jpg" alt="" class="main-photo" id="foto">
+                <p>
+                    <b style="font-size:30px;">Hotel Sonya</b><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lorem neque, lobortis quis neque at, maximus rhoncus nibh. Vivamus interdum massa vel semper mollis. In non odio placerat, convallis metus eu, molestie nunc. Suspendisse ac ex ut ex bibendum lobortis. In auctor quis velit eu faucibus. Nam sed tempor erat. Vivamus in orci id augue euismod ultrices ac ac quam. Donec in feugiat diam. Nullam finibus condimentum nunc, quis cursus leo posuere ut. Nam ultricies ultrices mi a accumsan.<br><br>In hac habitasse platea dictumst. Cras condimentum scelerisque interdum. Ut imperdiet felis id mauris aliquam venenatis. Mauris pulvinar sed sapien ut imperdiet. Aliquam erat volutpat. Duis sit amet lectus augue. Sed commodo ut ipsum vitae semper.<br><br>Integer ex diam, cursus ut elit eu, ultrices accumsan erat. Vivamus lacinia vulputate turpis non semper. Nam vitae lacus scelerisque, gravida erat ac, varius velit. Aliquam erat volutpat. Morbi id arcu suscipit, semper mauris vel, scelerisque massa. Vestibulum dapibus quam et ante sagittis molestie. Maecenas condimentum enim eget ex fermentum bibendum. Integer at venenatis lorem. Pellentesque volutpat lacinia efficitur. Nunc varius justo vel dui lobortis, a lobortis felis facilisis. Phasellus iaculis nisl ligula, at cursus felis congue in. Curabitur eget egestas lorem. Sed vel porttitor erat, vel lacinia justo. Nunc sodales lorem in vestibulum semper. Phasellus non vestibulum enim, eget congue risus.
+                </p>
+            </div>
+            <div class="fotine">
+                <img src="img/Camera.jpg" onclick="cambiaImg(this)">
+                <img src="img/Camera2.jpg" onclick="cambiaImg(this)">
+                <img src="img/CameraDivisa.jpg" onclick="cambiaImg(this)">
+            </div>
+        </section>
+        <section class="dest">
+            <br><br><br><br><br><br><br><br><br><br><hr>
+            <h1>Scopri altre destinazioni</h1>
+            <hr><br>
+            <div class="immagini">
+                <div class="destinazione">
+                    <a href="Roma.html"><img src="img/roma.png">
+                    <p>Hotel Roma</a></p>
+                </div>
+                <div class="destinazione">
+                    <a href="Parigi.html"><img src="img/parigi.png">
+                    <p>Hotel Parigi</p></a>
+                </div>
+                <div class="destinazione">
+                    <a href="Milano.html"><img src="img/milano.png">
+                    <p>Hotel Milano</p>
+                </div>
+                <div class="destinazione">
+                    <a href="Firenze.html"><img src="img/firenze.png">
+                    <p>Hotel Firenze</p></a>
+                </div>
+            </div>
+        </section><br><br><br>
+    </main>
+    <footer>
+        <br><br>
+        <h2>vatrigo</h2>
+        Copyright 2023 | Tutti i diritti riservati | © zSharpFire<br>
+    </footer>
+</body>
+</html>
