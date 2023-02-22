@@ -8,10 +8,6 @@
     <link rel="stylesheet" href="css/stile.css">
     <link rel="icon" href="img/V.png">
     <script>
-        function cambiaImg(img){
-            var foto = document.getElementById("foto");
-            foto.src = img.src;
-        }
         function Invia(){
             var name = document.getElementById("name");
             var surname = document.getElementById("surname");
@@ -22,12 +18,17 @@
             var country = document.getElementById("country");
             var time = document.getElementById("timez");
             var npersone = document.getElementById("persone");
-            alert("Nome: " + name.value + " " + surname.value + 
-            "\nEmail: " + email.value +
-            "\nNumero di telefono: " + tel.value + 
-            "\nAbitazione: " + country.value + " " + address.value + " " + cap.value +
-            "\nOrario di arrivo: " + time.value +
-            "\nNumero di persone: " + npersone.value);
+            
+            Email.send({
+                SecureToken : "3fb35ca5-f7f4-4aba-83a2-6150b6dffc39",
+                To : email.value,
+                From : "hotelvatrigo@gmail.com",
+                Subject : "Vatrigo | Prenotazione Hotel Sonya",
+                Body : 
+                '<div style="border: 2px solid black; padding: 10px;"><h1 style="text-align:center; font-size:43px; color:black;">Prenotazione Hotel Sonya</h1><hr><div style="color:black; font-size:25px;"><br><b>Nome:</b> ' + surname.value + ' ' + name.value + '<br><b>Numero di telefono:</b> ' + tel.value + '<br><b>Indirizzo:</b> ' + country.value + ' ' + address.value + ' ' + cap.value + '<br><b>Ora check-in:</b> ' + time.value + '<br><b>Numero persone: </b>' + npersone.value + '</div></div><br><small style="color: rgba(0, 0, 0, 0.584);text-align: center;">Copyright 2023 | Tutti i diritti riservati | © zSharpFire</small>'
+            }).then(
+                message => alert(message)
+            );
         }
     </script>
 </head>
